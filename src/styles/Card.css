@@ -1,0 +1,25 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 2px solid transparent;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  overflow: hidden;
+
+  p {
+    font-family: var(--font-names);
+    color: white;
+    font-weight: 900;
+    font-size: 1.2rem;
+  }
+}
+
+.card:hover {
+  border: 2px solid var(--portal-green);
+  box-shadow:
+    0 0 15px var(--portal-green),
+    0 0 30px var(--rick-blue);
+  transform: scale(1.05);
+}
