@@ -8,10 +8,15 @@
   justify-content: space-between;
   align-items: center;
   margin: 1rem 0;
+
+  h1 {
+    font-family: var(--font-title);
+  }
 }
 
 p {
   margin: 1rem 0;
+  font-family: var(--font-names);
 }
 
 .card {

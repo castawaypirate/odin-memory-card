@@ -3,4 +3,9 @@
   flex-direction: column;
   justify-content: center;
   height: 100%;
+  color: var(--morty-yellow);
+
+  span {
+    color: var(--plumbus-pink);
+  }
 }
