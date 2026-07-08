@@ -9,19 +9,17 @@ function App() {
   const [bestScore, setBestScore] = useState(0);
 
   async function fetchData() {
-    return await fetch(
+    const response = await fetch(
       "https://rickandmortyapi.com/api/character/1,2,3,4,5,6,7,8,9,10,11,12",
-    )
-      .then((res) => res.json())
-      .then((json) => {
-        return json;
-      });
+    );
+    const json = await response.json();
+    return json;
   }
 
   useEffect(() => {
     const fetch = async () => {
-      const fetched = await fetchData();
-      setData([...fetched]);
+      const fetchedData = await fetchData();
+      setData([...fetchedData]);
     };
     fetch();
   }, []);
